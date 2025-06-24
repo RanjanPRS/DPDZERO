@@ -1,4 +1,28 @@
 
+# Dockerized Microservices with Nginx Reverse Proxy
+
+This project demonstrates a simple microservices architecture using **Docker**, **Docker Compose**, and **Nginx as a reverse proxy**.
+
+It features two lightweight backend services — one in **Go** and another in **Python (Flask)** — running inside Docker containers and routed through Nginx. This is useful for demonstrating concepts like container orchestration, health checks, reverse proxies, and Docker networking.
+
+## Project Structure
+
+```bash
+  DPDZERO/
+├── docker-compose.yml
+├── nginx/
+│ ├── Dockerfile
+│ └── nginx.conf
+├── service_1/ # Golang microservice
+│ ├── Dockerfile
+│ └── main.go
+├── service_2/ # Python Flask microservice
+│ ├── Dockerfile
+│ └── app.py
+└── .gitignore
+
+```
+
 ## Tech Stack
 
 - 🐳 Docker
